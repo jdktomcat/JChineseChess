@@ -1,9 +1,9 @@
-package com.hzy.chinese.jchess.fragment;
+package com.jdktomcat.chinese.jchess.fragment;
 
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 
-import com.hzy.chinese.jchess.R;
+import com.jdktomcat.chinese.jchess.R;
 
 /**
  * Created by tangbull on 2018/3/13.

@@ -1,26 +1,26 @@
-package com.hzy.chinese.jchess.game;
+package com.jdktomcat.chinese.jchess.game;
 
 
-import com.hzy.chinese.jchess.R;
-import com.hzy.chinese.jchess.xqwlight.Position;
-import com.hzy.chinese.jchess.xqwlight.Search;
+import com.jdktomcat.chinese.jchess.R;
+import com.jdktomcat.chinese.jchess.xqwlight.Position;
+import com.jdktomcat.chinese.jchess.xqwlight.Search;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static com.hzy.chinese.jchess.game.GameConfig.RESP_CAPTURE;
-import static com.hzy.chinese.jchess.game.GameConfig.RESP_CAPTURE2;
-import static com.hzy.chinese.jchess.game.GameConfig.RESP_CHECK;
-import static com.hzy.chinese.jchess.game.GameConfig.RESP_CHECK2;
-import static com.hzy.chinese.jchess.game.GameConfig.RESP_CLICK;
-import static com.hzy.chinese.jchess.game.GameConfig.RESP_DRAW;
-import static com.hzy.chinese.jchess.game.GameConfig.RESP_ILLEGAL;
-import static com.hzy.chinese.jchess.game.GameConfig.RESP_LOSS;
-import static com.hzy.chinese.jchess.game.GameConfig.RESP_MOVE;
-import static com.hzy.chinese.jchess.game.GameConfig.RESP_MOVE2;
-import static com.hzy.chinese.jchess.game.GameConfig.RESP_WIN;
+import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_CAPTURE;
+import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_CAPTURE2;
+import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_CHECK;
+import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_CHECK2;
+import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_CLICK;
+import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_DRAW;
+import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_ILLEGAL;
+import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_LOSS;
+import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_MOVE;
+import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_MOVE2;
+import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_WIN;
 
 public class GameLogic implements Runnable {
 
