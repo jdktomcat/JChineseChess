@@ -1,4 +1,4 @@
-package com.jdktomcat.chinese.jchess.xqwlight;
+package com.jdktomcat.chinese.chess.xqwlight;
 
 /**
  * Created by HZY on 2018/3/8.

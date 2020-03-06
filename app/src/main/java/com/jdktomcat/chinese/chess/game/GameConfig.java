@@ -1,6 +1,6 @@
-package com.jdktomcat.chinese.jchess.game;
+package com.jdktomcat.chinese.chess.game;
 
-import com.jdktomcat.chinese.jchess.R;
+import com.jdktomcat.chinese.chess.R;
 
 /**
  * Created by HZY on 2018/3/8.

@@ -1,4 +1,4 @@
-package com.jdktomcat.chinese.jchess.activity;
+package com.jdktomcat.chinese.chess.activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,11 +16,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.blankj.utilcode.util.SnackbarUtils;
 import com.blankj.utilcode.util.StringUtils;
-import com.jdktomcat.chinese.jchess.R;
-import com.jdktomcat.chinese.jchess.game.GameConfig;
-import com.jdktomcat.chinese.jchess.game.GameLogic;
-import com.jdktomcat.chinese.jchess.game.IGameCallback;
-import com.jdktomcat.chinese.jchess.view.GameBoardView;
+import com.jdktomcat.chinese.chess.R;
+import com.jdktomcat.chinese.chess.game.GameConfig;
+import com.jdktomcat.chinese.chess.game.GameLogic;
+import com.jdktomcat.chinese.chess.game.IGameCallback;
+import com.jdktomcat.chinese.chess.view.GameBoardView;
 
 import java.util.LinkedList;
 

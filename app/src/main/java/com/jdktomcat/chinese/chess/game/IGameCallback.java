@@ -1,4 +1,4 @@
-package com.jdktomcat.chinese.jchess.game;
+package com.jdktomcat.chinese.chess.game;
 
 /**
  * Created by HZY on 2018/3/9.

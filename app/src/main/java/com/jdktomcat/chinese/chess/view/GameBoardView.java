@@ -1,4 +1,4 @@
-package com.jdktomcat.chinese.jchess.view;
+package com.jdktomcat.chinese.chess.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -11,11 +11,11 @@ import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.jdktomcat.chinese.jchess.R;
-import com.jdktomcat.chinese.jchess.game.GameConfig;
-import com.jdktomcat.chinese.jchess.game.GameLogic;
-import com.jdktomcat.chinese.jchess.game.IGameView;
-import com.jdktomcat.chinese.jchess.xqwlight.Position;
+import com.jdktomcat.chinese.chess.R;
+import com.jdktomcat.chinese.chess.game.GameConfig;
+import com.jdktomcat.chinese.chess.game.GameLogic;
+import com.jdktomcat.chinese.chess.game.IGameView;
+import com.jdktomcat.chinese.chess.xqwlight.Position;
 
 /**
  * Created by HZY on 2018/3/8.

@@ -1,4 +1,4 @@
-package com.jdktomcat.chinese.jchess;
+package com.jdktomcat.chinese.chess;
 
 import android.app.Application;
 

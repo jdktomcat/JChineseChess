@@ -1,13 +1,13 @@
-package com.jdktomcat.chinese.jchess.activity;
+package com.jdktomcat.chinese.chess.activity;
 
 
 import android.app.Activity;
 import android.os.Bundle;
 
 import com.blankj.utilcode.util.ActivityUtils;
-import com.jdktomcat.chinese.jchess.R;
-import com.jdktomcat.chinese.jchess.game.GameConfig;
-import com.jdktomcat.chinese.jchess.xqwlight.Position;
+import com.jdktomcat.chinese.chess.R;
+import com.jdktomcat.chinese.chess.game.GameConfig;
+import com.jdktomcat.chinese.chess.xqwlight.Position;
 
 import java.io.InputStream;
 

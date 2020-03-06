@@ -1,4 +1,4 @@
-package com.jdktomcat.chinese.jchess.game;
+package com.jdktomcat.chinese.chess.game;
 
 
 public interface IGameView {

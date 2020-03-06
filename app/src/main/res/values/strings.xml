@@ -5,8 +5,8 @@
     <string name="pref_who_first_key" translatable="false">switch_computer_first</string>
     <string name="pref_piece_style_key" translatable="false">list_chess_style</string>
     <string name="github_user_page" translatable="false">https://huzongyao.github.io</string>
-    <string name="github_project_page" translatable="false">https://github.com/huzongyao/JChineseChess</string>
-    <string name="github_release_page" translatable="false">https://github.com/huzongyao/JChineseChess/releases</string>
+    <string name="github_project_page" translatable="false">https://github.com/jdktomcat/JChineseChess</string>
+    <string name="github_release_page" translatable="false">https://github.com/jdktomcat/JChineseChess/releases</string>
 
     <string name="app_name">ChineseChess</string>
     <string name="now_loading">Loading, Please Wait…</string>

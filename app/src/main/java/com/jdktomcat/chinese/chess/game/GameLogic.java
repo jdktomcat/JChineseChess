@@ -1,26 +1,26 @@
-package com.jdktomcat.chinese.jchess.game;
+package com.jdktomcat.chinese.chess.game;
 
 
-import com.jdktomcat.chinese.jchess.R;
-import com.jdktomcat.chinese.jchess.xqwlight.Position;
-import com.jdktomcat.chinese.jchess.xqwlight.Search;
+import com.jdktomcat.chinese.chess.R;
+import com.jdktomcat.chinese.chess.xqwlight.Position;
+import com.jdktomcat.chinese.chess.xqwlight.Search;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_CAPTURE;
-import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_CAPTURE2;
-import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_CHECK;
-import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_CHECK2;
-import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_CLICK;
-import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_DRAW;
-import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_ILLEGAL;
-import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_LOSS;
-import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_MOVE;
-import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_MOVE2;
-import static com.jdktomcat.chinese.jchess.game.GameConfig.RESP_WIN;
+import static com.jdktomcat.chinese.chess.game.GameConfig.RESP_CAPTURE;
+import static com.jdktomcat.chinese.chess.game.GameConfig.RESP_CAPTURE2;
+import static com.jdktomcat.chinese.chess.game.GameConfig.RESP_CHECK;
+import static com.jdktomcat.chinese.chess.game.GameConfig.RESP_CHECK2;
+import static com.jdktomcat.chinese.chess.game.GameConfig.RESP_CLICK;
+import static com.jdktomcat.chinese.chess.game.GameConfig.RESP_DRAW;
+import static com.jdktomcat.chinese.chess.game.GameConfig.RESP_ILLEGAL;
+import static com.jdktomcat.chinese.chess.game.GameConfig.RESP_LOSS;
+import static com.jdktomcat.chinese.chess.game.GameConfig.RESP_MOVE;
+import static com.jdktomcat.chinese.chess.game.GameConfig.RESP_MOVE2;
+import static com.jdktomcat.chinese.chess.game.GameConfig.RESP_WIN;
 
 public class GameLogic implements Runnable {
 
@@ -245,8 +245,7 @@ public class GameLogic implements Runnable {
     private boolean getResult(int response) {
         if (pos.isMate()) {
             playSound(response < 0 ? RESP_WIN : RESP_LOSS);
-            showMessage(response < 0 ?
-                    R.string.congratulations_you_win : R.string.you_lose_and_try_again);
+            showMessage(response < 0 ? R.string.congratulations_you_win : R.string.you_lose_and_try_again);
             return true;
         }
         int vlRep = pos.repStatus(3);

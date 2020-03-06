@@ -1,53 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jdktomcat.chinese.jchess">
+    package="com.jdktomcat.chinese.chess">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <application
-        android:name="com.jdktomcat.chinese.jchess.MainApplication"
+    <application android:name="com.jdktomcat.chinese.chess.MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity
-            android:name="com.jdktomcat.chinese.jchess.activity.SplashActivity"
+        <activity android:name="com.jdktomcat.chinese.chess.activity.SplashActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
             <intent-filter>
-                <data
-                    android:host="chinese.chess"
-                    android:scheme="game" />
+                <data android:host="chinese.chess" android:scheme="game" />
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name="com.jdktomcat.chinese.jchess.activity.MainActivity"
+            android:name="com.jdktomcat.chinese.chess.activity.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="fullSensor" />
         <activity
-            android:name="com.jdktomcat.chinese.jchess.activity.SettingsActivity"
+            android:name="com.jdktomcat.chinese.chess.activity.SettingsActivity"
             android:label="@string/game_settings"
             android:screenOrientation="fullSensor" />
         <activity
-            android:name="com.jdktomcat.chinese.jchess.activity.AboutActivity"
+            android:name="com.jdktomcat.chinese.chess.activity.AboutActivity"
             android:label="@string/app_name"
             android:screenOrientation="fullSensor" />
         <activity
-            android:name="com.jdktomcat.chinese.jchess.activity.WebViewActivity"
+            android:name="com.jdktomcat.chinese.chess.activity.WebViewActivity"
             android:screenOrientation="fullSensor" />
     </application>
 
