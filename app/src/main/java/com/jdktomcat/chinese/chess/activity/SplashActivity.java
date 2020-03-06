@@ -12,7 +12,8 @@ import com.jdktomcat.chinese.chess.xqwlight.Position;
 import java.io.InputStream;
 
 /**
- * Created by HZY on 2018/3/6.
+ * @author  jdktomcat
+ * @date 2020-03-06
  */
 
 public class SplashActivity extends Activity {

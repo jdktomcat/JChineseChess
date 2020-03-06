@@ -6,7 +6,7 @@ import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.Utils;
 
 /**
- * Created by HZY on 2018/3/6.
+ * @author jdktomcat
  */
 
 public class MainApplication extends Application {
@@ -15,7 +15,6 @@ public class MainApplication extends Application {
     public void onCreate() {
         super.onCreate();
         Utils.init(this);
-        LogUtils.getConfig().setLogSwitch(BuildConfig.DEBUG)
-                .setLogHeadSwitch(false).setBorderSwitch(false);
+        LogUtils.getConfig().setLogSwitch(BuildConfig.DEBUG).setLogHeadSwitch(false).setBorderSwitch(false);
     }
 }
