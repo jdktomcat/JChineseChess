@@ -17,7 +17,10 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * Created by tangbull on 2018/3/27.
+ *  关于弹窗
+ *
+ * @author jdktomcat
+ * @date 2018/3/27.
  */
 
 public class AboutActivity extends AppCompatActivity {
@@ -52,9 +55,7 @@ public class AboutActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @OnClick({R.id.version_info_item,
-            R.id.source_code_item,
-            R.id.about_me_item})
+    @OnClick({R.id.version_info_item, R.id.source_code_item, R.id.about_me_item})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.version_info_item:
