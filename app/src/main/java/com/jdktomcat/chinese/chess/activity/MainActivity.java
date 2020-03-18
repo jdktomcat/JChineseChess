@@ -27,21 +27,69 @@ import java.util.LinkedList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity
-        implements IGameCallback {
+/**
+ * 主活动区
+ *
+ * @author jdktomcat
+ * @date 2020-03-18
+ */
+public class MainActivity extends AppCompatActivity implements IGameCallback {
 
+    /**
+     * 棋盘
+     */
     @BindView(R.id.game_board)
     GameBoardView mGameBoard;
+
+    /**
+     * 游戏进度条
+     */
     @BindView(R.id.game_progress)
     ProgressBar mGameProgress;
+
+    /**
+     * 声音池
+     */
     private SoundPool mSoundPool;
+
+    /**
+     * 音频列表
+     */
     private LinkedList<Integer> mSoundList;
+
+    /**
+     * 游戏逻辑
+     */
     private GameLogic mGameLogic;
+
+    /**
+     * 共享属性
+     */
     private SharedPreferences mPreference;
+
+    /**
+     * 是否开启声音
+     */
     private boolean mSoundEnable;
+
+    /**
+     * 障碍索引
+     */
     private int mHandicapIndex;
+
+    /**
+     * 电脑
+     */
     private boolean mComputerFlip;
+
+    /**
+     * 棋子样式
+     */
     private int mPieceStyle;
+
+    /**
+     * 电脑棋力
+     */
     private int mAILevel;
 
     @Override
@@ -152,8 +200,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void showMessage(String message) {
-        SnackbarUtils.with(mGameBoard).setDuration(SnackbarUtils.LENGTH_LONG)
-                .setMessage(message).show();
+        SnackbarUtils.with(mGameBoard).setDuration(SnackbarUtils.LENGTH_LONG).setMessage(message).show();
     }
 
     @Override
